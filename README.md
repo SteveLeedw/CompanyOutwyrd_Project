@@ -2,8 +2,8 @@
 
 
 If you run this project, you use MAMP (https://www.mamp.info/en/windows/)
-and Clone repo into mamp htdocs, restart/run MAMP, and go to localhost/commsimple/home.php
-ALso, Follow the instructions in database file for getting databases working. And There is login, logout, resgister for user. Then User selling and buying house, appartment, lands. User can looked new places and user can use leasing place and connection with supplyers. 
+and Clone repo into mamp htdocs, restart/run MAMP, 
+and go to localhost/commsimple/home.php. Also, following the instructions in database file for getting databases working. And There is login, logout, resgister for user. Then User selling and buying house, appartment, lands. User can looked new places and user can use leasing place and connection with supplyers. 
 
 Top main page and there is Outwyrd company logo and drop bar.
 
