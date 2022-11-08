@@ -1,0 +1,88 @@
+.tabs__custom {
+    // border: 1px solid gray;
+    .nav-pills {
+        border: 1px solid #eee;
+        padding: 10px;
+        margin-top: -16px;
+        .nav-item {
+            .nav-link {
+                font-family: $font-family-base;
+                font-size: 14px;
+                font-weight: 600;
+                text-transform: capitalize;
+                @include mobile {
+                    padding: 0.5rem 8px;
+                }
+            }
+        }
+    }
+}
+
+.tabs__custom-v2 {
+    position: relative;
+    .nav-pills {
+        border: 1px solid #eee;
+        padding: 10px 15px;
+        @include mobile {
+            margin-top: 30px;
+        }
+        @include tablet {
+            margin-top: 30px;
+        }
+        .nav-item {
+            .nav-link {
+                font-family: $font-family-base;
+                font-size: 14px;
+                font-weight: 600;
+                text-transform: capitalize;
+                border: 1px solid #eee;
+                padding: 6px 12px;
+                @include mobile {
+                    padding: 0.5rem 8px;
+                }
+            }
+            .active {
+                border: 1px solid $primary;
+            }
+        }
+        .list-inline-item {
+            position: relative;
+            line-height: 30px;
+            .title-text {
+                font-family: $font-family-base;
+                font-size: 14px;
+                font-weight: 600;
+                color: $primary;
+                margin-right: 5px;
+            }
+            a {
+                font-family: $font-family-base;
+                font-size: 14px;
+                font-weight: 500;
+                cursor: pointer;
+                color: $black;
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+            .dropdown-menu {
+                padding: 0;
+                margin: 10px 0 0;
+                border: 0;
+                box-shadow: 0 1px 5px rgba(70, 70, 70, 0.2);
+                .dropdown-item {
+                    padding: 8px 16px;
+                    border-bottom: 1px solid #eee;
+                    &:last-child {
+                        border-bottom: 0;
+                    }
+                    &:hover {
+                        color: $white;
+                        text-decoration: none;
+                        background-color: $primary;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,87 @@
+// 7-1 Sass Architecture
+// https://sass-guidelin.es/#the-7-1-pattern
+
+// Abstracts
+// - tools and helpers
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+
+@import "./abstracts/functions";
+@import "./abstracts/variables";
+@import "./abstracts/general";
+@import "./abstracts/mixins";
+@import "./abstracts/media-query";
+
+// Vendors
+// - CSS from external libraries and frameworks
+@import "./vendors/googlefonts";
+@import "./vendors/bootstrap";
+@import "./vendors/animate";
+@import "./vendors/owl.carousel";
+@import "./vendors/aos";
+
+@import "./vendors/nice-select";
+@import "./vendors/ion-rangeslider";
+@import "./vendors/chart";
+
+// Base
+// - standard styles for commonly elements
+@import "./base/base";
+@import "./base/helpers";
+@import "./base/fonts";
+@import "./base/typography";
+
+// Components
+// - for small, reusable pieces
+@import "./components/buttons";
+@import "./components/form";
+@import "./components/title-head";
+@import "./components/form-filter";
+@import "./components/download";
+@import "./components/breadcrumb";
+@import "./components/hero";
+@import "./components/bg-image";
+@import "./components/searchbar";
+@import "./components/search-v1";
+@import "./components/card-image";
+@import "./components/card-image-vertical";
+@import "./components/card";
+@import "./components/category";
+@import "./components/blockquote";
+@import "./components/blog-author";
+@import "./components/gallery";
+@import "./components/slider-image";
+@import "./components/carousel";
+@import "./components/testimonial";
+@import "./components/tabs-custom";
+@import "./components/video";
+@import "./components/box-overlay";
+@import "./components/counter";
+@import "./components/faq";
+@import "./components/comments";
+@import "./components/team";
+@import "./components/agency";
+@import "./components/cta";
+@import "./components/chart";
+@import "./components/pricing-table";
+
+// Layout
+// - everything that takes part in laying out the site/application
+@import "./layout/header";
+@import "./layout/menukit";
+@import "./layout/navbar";
+@import "./layout/footer";
+
+// Pages
+// - page-specific styles
+@import "./pages/home";
+@import "./pages/single-detail";
+@import "./pages/blog";
+@import "./pages/blog-single";
+@import "./pages/contact";
+@import "./pages/404";
+@import "./pages/index";
+
+// Themes
+// - for different aspects
+@import "./themes/default";

@@ -1,0 +1,106 @@
+.section__breadcrumb {
+    display: block;
+    h2 {
+        font-family: $font-family-heading;
+        margin-bottom: 10px;
+        @include mobile {
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+    }
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        background: -webkit-gradient(
+            linear,
+            left bottom,
+            left top,
+            color-stop(50%, rgba(0, 0, 0, 0.5)),
+            to(rgba(0, 0, 100, 0))
+        );
+        background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 100, 0));
+        background: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 100, 0));
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 100, 0));
+        height: 80%;
+        -webkit-transition: all 0.6s ease;
+        -moz-transition: all 0.6s ease;
+        -o-transition: all 0.6s ease;
+        transition: all 0.6s ease;
+        z-index: 0;
+        opacity: 0.5;
+    }
+    .list-inline {
+        margin-bottom: 0;
+
+        @include mobile {
+            text-align: center;
+            margin-bottom: 5px;
+        }
+        .list-inline-item {
+            margin-right: 0;
+            a {
+                font-size: 14px;
+                font-family: $text-font-paragraph;
+                text-transform: capitalize;
+                -webkit-transition: 0.3s ease;
+                transition: 0.3s ease;
+                &:hover {
+                    color: $warning;
+                    text-decoration: none;
+                }
+            }
+        }
+        .list-inline-item:not(:last-child)::after {
+            display: inline-block;
+            margin: 0 5px;
+            color: #fff;
+            font-size: 15px;
+            content: "/";
+        }
+    }
+}
+
+.section__breadcrumb-v1 {
+    .breadcrumb {
+        padding: 18px 0;
+        .active {
+            color: $primary;
+        }
+        &-item {
+            padding: 0;
+            &::after {
+                display: inline-block;
+                position: relative;
+                content: "\f105";
+                font-family: "FontAwesome";
+                margin: 0 8px;
+            }
+            &:last-child::after {
+                display: none;
+            }
+            &::before {
+                display: none;
+            }
+
+            a {
+                font-family: $font-family-base;
+                color: $black;
+                font-weight: 600;
+                font-size: 15px;
+                &:hover {
+                    text-decoration: none;
+                    color: $primary;
+                }
+            }
+            span {
+                font-family: $font-family-base;
+                font-size: 15px;
+                font-weight: 600;
+            }
+        }
+    }
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    ${require('./partials/head.html')}
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        ${require('./partials/navbar-top.html')}
+        <!-- NAVBAR -->
+        ${require('./partials/navbar-v1.html')}
+        <!-- END NAVBAR -->
+        <!-- BREADCRUMB -->
+        <div class="bg-theme-overlay">
+
+            <section class="section__breadcrumb ">
+                <div class="container">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-md-8 text-center">
+                            <h2 class="text-capitalize text-white ">property list</h2>
+                            <ul class="list-inline ">
+                                <li class="list-inline-item">
+                                    <a href="#" class="text-white">
+                                        home
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#" class="text-white">
+                                        property
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#" class="text-white">
+                                        property list
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+        <!-- END BREADCRUMB -->
+    </header>
+    <div class="clearfix"></div>
+
+    <!-- LISTING LIST -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+
+                    ${require('./partials/form-filter.html')}
+                    <!-- ARCHIVE CATEGORY -->
+                    <div class=" wrapper__list__category">
+                        ${require('./partials/category-v1.html')}
+                    </div>
+                    <!-- End ARCHIVE CATEGORY -->
+                    ${require('./partials/download-property.html')}
+
+                </div>
+                <div class="col-lg-8">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="tabs__custom-v2">
+                                ${require('./partials/filter-vertical-v2.html')}
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END LISTING LIST -->
+
+    <!-- CALL TO ACTION -->
+    ${require('./partials/cta-v1.html')}
+    <!-- END CALL TO ACTION -->
+
+    ${require('./partials/footer-v2.html')}
+
+
+
+    <a href="javascript:" id="return-to-top"><i class="fa fa-chevron-up"></i></a>
+
+</body>
+
+</html>

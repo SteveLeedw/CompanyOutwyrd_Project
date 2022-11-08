@@ -1,0 +1,211 @@
+.highlight {
+  color: #fa804c;
+}
+.navbar-brand {
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+}
+.navbar-nav {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: black;
+  font-weight: bold;
+}
+
+.nav-banner {
+  background-color: #fff9f4;
+}
+
+.title {
+  margin-top: 80px;
+}
+
+.title h1 {
+  font-family: "Bebas Neue", cursive;
+  font-size: 65px;
+}
+.main-btn {
+  background-color: #3d4ff3;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  padding: 10px 20px 10px 20px;
+  border-radius: 10px;
+  font-weight: normal;
+}
+
+.keds,
+.shoes,
+.info-creative {
+  margin-top: 50px;
+}
+
+
+.card {
+  border-radius: 15px;
+  box-shadow: 5px 6px 15px grey;
+}
+.card-img-top {
+  height: 300px;
+  border: 18px solid white;
+  background-color: #f1f1f1;
+  border-radius: 35px;
+}
+
+.info-body {
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 5px 6px 15px grey;
+}
+
+.creative {
+  padding-top: 90px;
+}
+
+footer {
+  margin-top: 10px;
+  background-color: #fa804c;
+  color: white;
+  padding: 10px 0px 10px 0px;
+}
+
+@media (max-width: 576px) {
+  .title {
+    margin-top: 30px;
+    position: absolute;
+  }
+  .banner-image {
+    margin-top: 300px;
+  }
+  .creative {
+    position: absolute;
+    padding-top: 0px;
+  }
+  .info {
+    margin-top: 300px;
+    text-align: center;
+  }
+}
+
+/* Home page seach bar styling */
+.wrapper {
+	display: flex;				
+  flex-direction: column;
+  min-height: 100%;
+
+}
+
+.wrapper.indexPage {
+	justify-content: center;				
+}
+
+.mainSection {
+	display: flex;
+	flex-direction: column;
+	align-items: center;					
+}
+
+.mainSection .searchContainer {
+	margin-top: 40px;							
+	margin-bottom: 40px;
+  width: 100%;
+}
+
+.mainSection .searchContainer form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.searchContainer .searchButton {
+	color: white;
+	background-color: #3d4ff3;
+	border: none;
+	height: 36px;
+	width: 125px;
+	border-radius: 20px;
+	font-size: 13px;
+	font-weight: bold;
+	margin-left: 20px;
+	cursor: pointer;
+	outline: none;
+}
+
+.mainSection .searchContainer .searchBox {
+	border: none;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+  height: 44px;
+  border-radius: 20px;
+  outline: none;
+  padding: 10px;							
+  box-sizing: border-box;
+  font-size: 16px;
+  width: 70%;
+  max-width: 630px;
+  color: #000;
+}
+
+
+.header{
+	border-bottom: 1px solid #ececec;
+}
+
+.wrapper .headerContent{
+	display: flex;
+	align-items: center;
+}
+
+.headerContent .logoContainer{
+	width: 100px;
+	padding: 5px 20px;
+	box-sizing: border-box;			
+}
+
+.logoContainer img {
+    width: 100%;
+}
+
+.headerContent .searchContainer {
+	flex: 1;
+}
+
+.headerContent .searchContainer form {
+	margin: 15px 0 28px 0;
+}
+
+
+.headerContent .searchBarContainer{
+	height: 35px;
+	border-radius: 20px;
+	background-color: white;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+	width: 70%;
+	max-width: 630px;
+	box-sizing: border-box;
+	display: flex;
+}
+
+.headerContent .searchBarContainer .searchBox{
+	flex: 1;
+	border: none;
+	background-color: transparent;
+	padding: 12px;
+	font-size: 16px;
+	color: black;
+}
+
+.headerContent .searchBarContainer .searchButton{
+	background-color: white;
+	height: 35px;
+	margin-top: 0;
+	width: 35px;
+	padding-right: 20px;
+	padding-top: 5px;
+	display: flex;
+	justify-container: center;
+}
+
+.headerContent .searchBarContainer .searchButton img{
+	width: 22px;
+}

@@ -1,0 +1,126 @@
+// -----------------------------------------------------------------------------
+// BLOG DETAIL
+// -----------------------------------------------------------------------------
+
+.single__blog-detail {
+    display: inline-block;
+    position: relative;
+    @include mobile {
+        margin-bottom: 30px;
+    }
+    h1 {
+        font-size: 32px;
+        line-height: 1.4;
+        color: $navy;
+        font-family: $font-family-heading;
+        @include mobile {
+            font-size: 20px;
+        }
+    }
+    &-info {
+        margin-bottom: 15px;
+        .list-inline {
+            padding: 0;
+            margin: 0;
+            &-item {
+                font-size: 14px;
+                margin-right: 5px;
+                @include mobile {
+                    margin-right: 0;
+                }
+                a {
+                    text-transform: capitalize;
+                    @include mobile {
+                        font-size: 12px;
+                    }
+                    &:hover {
+                        text-decoration: none;
+                    }
+                }
+                span {
+                    text-transform: capitalize;
+                    font-family: $font-family-base;
+                    font-weight: 500;
+                    @include mobile {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+    .image-profile {
+        border: 1px solid #eee;
+        width: 50px;
+        max-width: 100%;
+        margin-bottom: 0;
+        padding: 3px;
+        border-radius: 50%;
+        img {
+            position: relative;
+            max-width: 100%;
+            height: auto;
+            border-radius: 50%;
+            -o-object-fit: cover;
+            object-fit: cover;
+        }
+    }
+    p {
+        line-height: 1.7;
+        color: $navy;
+    }
+    .drop-cap {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+        color: $navy;
+        margin-bottom: 1.5em;
+        &::first-letter {
+            initial-letter: 3;
+            color: #343a40;
+            margin: 0 0.2em 0 0;
+            font-size: 5em;
+            float: left;
+            font-weight: 600;
+            line-height: 1;
+        }
+    }
+}
+
+// -----------------------------------------------------------------------------
+// BLOG DETAIL NEXT & PREV
+// -----------------------------------------------------------------------------
+
+.single_navigation-next,
+.single_navigation-prev {
+    display: block;
+
+    a {
+        font-family: $font-family-heading;
+        color: $navy;
+        font-weight: 600;
+        line-height: 1.5;
+        font-size: 14px;
+        &:hover {
+            text-decoration: none;
+            color: $primary;
+        }
+        span {
+            display: block;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 2.5px;
+            color: #7e7e7e;
+            margin-bottom: 12px;
+            -webkit-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+        }
+    }
+}
+
+.single_navigation-next,
+.single_navigation-prev {
+    margin-bottom: 30px;
+    @include mobile {
+        margin-bottom: 20px;
+    }
+}

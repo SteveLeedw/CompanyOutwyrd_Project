@@ -1,0 +1,42 @@
+✅Add to checkSamePasswords.js to check if account creation is completely filled out (all info present?)
+
+    add something to notify user account was created : send them to another page saying "account created?"
+
+Change topBar to use cookies instead of php session?
+
+❗passwords should be hashed
+❗database password should be changed before deployment and not committed publicly
+
+get google login working
+
+✅make the "createUserBackend" which takes email from createUserFrontend.php and checks if account exists, if not creates an account
+
+✅change createUserFronted javascript to not allow blank entries
+
+✅sanitize inputs from input boxes, specifically account creation
+
+✅change topBar.php to only do the maintaining login code
+
+✅make user who is not signed in not able to view userInfo.php
+
+if a user is signed in they should not be able to view createUserFrontend.php
+
+delete phpinfo.php before deployment
+
+add links to userinfo.php, uploadListing.php
+
+check if a property being listed already exists at that address
+    stop duplicate listings 
+
+
+
+Add 
+    <?php
+    $stmd->close();
+    $mysqli->close();
+    ?>
+to all places where a sql query is done
+
+
+Add userInfo for display on listings so users can contact creators of listings
+

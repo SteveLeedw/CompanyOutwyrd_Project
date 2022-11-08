@@ -1,0 +1,249 @@
+// -----------------------------------------------------------------------------
+// BACKGROUND IMAGE
+// -----------------------------------------------------------------------------
+.bg-theme {
+    background-image: url("../../images/placeholder/1920x1080.jpg");
+    width: 100%;
+    background-attachment: fixed !important;
+    background-position: center center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+}
+
+.bg-theme-v1 {
+    background-image: url("../../images/placeholder/1920x1080.jpg");
+    width: 100%;
+    background-attachment: fixed !important;
+    background-position: center center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: rgb(12, 12, 12);
+        opacity: 0.3;
+    }
+}
+
+.bg-theme-v2 {
+    position: relative;
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 45%;
+        background-color: $primary;
+        z-index: -1;
+        // opacity: 0.9;
+    }
+}
+
+.bg-theme-v3 {
+    background-image: url("../../images/placeholder/1920x1080.jpg");
+    width: 100%;
+    background-attachment: fixed !important;
+    background-position: center center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: $primary;
+        opacity: 0.9;
+    }
+}
+
+.bg-theme-v4 {
+    background-image: url("../../images/placeholder/1920x1080.jpg");
+    width: 100%;
+    // background-attachment: fixed !important;
+    background-position: center center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: $white;
+        opacity: 0.3;
+    }
+}
+
+.bg-theme-v5 {
+    background-image: url("../../images/placeholder/1920x1080.jpg");
+    width: 100%;
+    background-attachment: fixed !important;
+    background-position: center center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: rgb(12, 12, 12);
+        opacity: 0.1;
+    }
+}
+
+.bg-theme-v6 {
+    background-image: url("../../images/placeholder/1920x1080.jpg");
+    width: 100%;
+    // background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(18, 18, 18, 0.93);
+        opacity: 0.8;
+    }
+}
+
+.bg-theme-v7 {
+    background-image: url("../../images/placeholder/1920x1080.jpg");
+    width: 100%;
+    // background-attachment: fixed !important;
+    background-position: center center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: $white;
+        opacity: 0.3;
+    }
+}
+
+.bg-theme-v8 {
+    background-image: url("../../images/placeholder/1920x1080.jpg");
+    width: 100%;
+    // background-attachment: fixed !important;
+    background-position: center center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: $black;
+        opacity: 0.3;
+    }
+}
+
+.bg-theme-overlay {
+    background-image: url("../../images/placeholder/1920x1080.jpg");
+    width: 100%;
+    // background-attachment: fixed !important;
+    background-position: center 50%;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    position: relative;
+    @include mobile {
+        background-attachment: fixed;
+    }
+    @include tablet {
+        background-attachment: fixed;
+    }
+}
+
+.bg-theme-footer {
+    background-image: url("../../images/placeholder/1920x1080.jpg");
+    width: 100%;
+    // background-attachment: fixed !important;
+    background-position: center center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(18, 18, 18, 0.93);
+        opacity: 0.9;
+    }
+}
+
+.bg-pattern {
+    background-image: url("../../images/placeholder/1920x1080.jpg");
+    width: 100%;
+    background-repeat: repeat;
+    // background-attachment: fixed !important;
+    // background-position: center center;
+    // background-size: cover;
+    // -webkit-background-size: cover;
+    // -moz-background-size: cover;
+    // -o-background-size: cover;
+    // -moz-background-size: cover;
+}
+.bg-pattern-v1 {
+    background-image: url("../../images/placeholder/1920x1080.jpg");
+    width: 100%;
+    background-repeat: repeat;
+    // background-attachment: fixed !important;
+    // background-position: center center;
+    // background-size: cover;
+    // -webkit-background-size: cover;
+    // -moz-background-size: cover;
+    // -o-background-size: cover;
+    // -moz-background-size: cover;
+}

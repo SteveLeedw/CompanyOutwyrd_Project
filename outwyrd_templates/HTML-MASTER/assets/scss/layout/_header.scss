@@ -1,0 +1,174 @@
+// -----------------------------------------------------------------------------
+// Header of the site/application
+// -----------------------------------------------------------------------------
+
+.jumbotron {
+	position: relative;
+	background-color: #d1e6f9;
+	height: 100vh;
+	min-height: 25rem;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	z-index: 2;
+	@include mobile {
+		height: auto;
+		z-index: 4;
+	}
+	@include tablet {
+		height: auto;
+	}
+}
+
+.wrap__intro {
+	height: 80vh;
+	position: relative;
+	@include mobile {
+		align-items: center;
+		padding-top: 3rem;
+		padding-bottom: 3rem;
+		height: auto;
+	}
+
+	&-heading {
+		// max-width: 700px;
+		// margin-right: 50px;
+
+		@include mobile {
+			margin-right: 0;
+			max-width: 100%;
+		}
+	}
+	h1 {
+		color: $white;
+		text-transform: capitalize;
+		font-size: 55px;
+		font-weight: 700;
+		font-family: $text-heading;
+		@include mobile {
+			font-size: 26px;
+		}
+		@include tablet {
+			font-size: 30px;
+		}
+	}
+	h4 {
+		color: $white;
+		text-transform: capitalize;
+		line-height: 1.7;
+		background-color: $primary;
+		display: inline-block;
+		padding: 0.2rem 0.5rem;
+		font-size: 16px;
+		font-weight: 500;
+		@include mobile {
+			font-size: 14px;
+		}
+	}
+	p {
+		font-size: 18px;
+		color: $gray;
+		margin-bottom: 40px;
+	}
+	a {
+		&:hover {
+			text-decoration: none;
+		}
+		span {
+			position: relative;
+			display: flex;
+			font-size: 30px;
+			margin: 10px 20px;
+			align-self: center;
+			width: auto;
+			@include mobile {
+				margin: 10px 8px;
+			}
+		}
+	}
+	figure {
+		img {
+			display: block;
+			margin: 0 auto;
+			object-fit: cover;
+			position: relative;
+			height: 430px;
+			z-index: 2;
+			@include mobile {
+				display: none;
+			}
+			@include tablet {
+				height: auto;
+			}
+		}
+		&::before {
+			bottom: -35px;
+			right: -60px;
+			@include mobile {
+				bottom: -115px;
+				right: 0px;
+			}
+			@include tablet {
+				bottom: -60px;
+				right: -24px;
+			}
+		}
+		&::before {
+			content: "";
+			position: absolute;
+			// background-image: url("../../images/ornament.png");
+			background-repeat: no-repeat;
+			width: 240px;
+			height: 230px;
+			z-index: 1;
+			@include mobile {
+				width: 145px;
+				height: 175px;
+			}
+		}
+		&::after {
+			top: 0px;
+			left: -60px;
+		}
+		&::after {
+			content: "";
+			position: absolute;
+			// background-image: url("../../images/ornament1.png");
+			background-repeat: no-repeat;
+			width: 50px;
+			height: 70px;
+			z-index: 1;
+		}
+	}
+	// &:before {
+	// 	top: 19%;
+	// 	left: 20%;
+	// }
+	// &::before {
+	// 	content: "";
+	// 	position: absolute;
+	// 	width: 100px;
+	// 	height: 100px;
+	// 	background: $primary;
+	// 	opacity: 0.1;
+	// 	z-index: 0;
+	// 	border-radius: 50%;
+	// 	pointer-events: none;
+	// }
+	&:after {
+		top: 4%;
+		right: 30%;
+	}
+	&::after {
+		content: "";
+		position: absolute;
+		// background-image: url("../../images/ornament4.png");
+		background-repeat: no-repeat;
+		width: 40px;
+		height: 60px;
+		z-index: 1;
+
+		// -ms-transform: skewY(10deg); /* IE 9 */
+		// transform: skewY(10deg);
+	}
+}

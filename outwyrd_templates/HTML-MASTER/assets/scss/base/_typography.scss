@@ -1,0 +1,75 @@
+// -----------------------------------------------------------------------------
+// Typography
+// -----------------------------------------------------------------------------
+
+// basic style for copy text
+//
+// example:
+// https://github.com/HugoGiraudel/sass-boilerplate/blob/master/stylesheets/base/_typography.scss
+
+h6 {
+  font-size: 18px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-family-heading;
+  font-weight: 700;
+  color: $navy;
+}
+p {
+  font-size: 14px;
+  font-family: $text-font-paragraph;
+  font-weight: 500;
+  color: $gray-700;
+  line-height: 1.5;
+}
+
+p.has-drop-cap-container {
+  width: 80%;
+  max-width: 35em;
+  margin: 0 auto;
+  &::first-letter {
+    initial-letter: 3;
+    color: #c69c6d;
+    margin: 0 0.2em 0 0;
+    font-size: 5em;
+    float: left;
+    font-weight: 600;
+    line-height: 1;
+
+    // font-size: 400%;
+    // color: #ff0000;
+    // font-weight: bold;
+    // float: left;
+    // initial-letter: 3;
+  }
+}
+
+p.has-drop-cap-fluid {
+  width: 1000%;
+  max-width: 100%;
+  margin: 0 auto;
+  color: #333;
+  line-height: 28px;
+  font-weight: 500;
+  &::first-letter {
+    initial-letter: 3;
+    color: #343a40;
+    margin: 0 0.2em 0 0;
+    font-size: 5em;
+    float: left;
+    font-weight: 600;
+    line-height: 1;
+
+    // font-size: 400%;
+    // color: #ff0000;
+    // font-weight: bold;
+    // float: left;
+    // initial-letter: 3;
+  }
+}

@@ -1,0 +1,85 @@
+// CATEGORY PROPERTY
+.widget {
+    border: 1px solid #e9ecef;
+    ul {
+        margin: 0;
+        padding: 0;
+        li {
+            border-bottom: solid 1px #e6e6e6;
+            &:last-child {
+                border-bottom: 0;
+            }
+            a {
+                display: block;
+                padding: 15px 20px;
+                // background-color: #f8f8f8;
+                text-decoration: none;
+                color: #222;
+                font-size: 14px;
+                text-transform: uppercase;
+                letter-spacing: 0.3px;
+                transition: all 0.3s ease;
+                line-height: 26px;
+                font-family: $font-family-base;
+
+                &:hover {
+                    padding: 15px 20px 15px 30px;
+                }
+                span {
+                    display: block;
+                    float: right;
+                    border-radius: 4px;
+                    height: 26px;
+                    width: 26px;
+                    text-align: center;
+                    padding: 6px 0;
+                    font-size: 12px;
+                    line-height: 14px;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+
+.widget__category {
+    border: solid 1px #e6e6e6;
+    ul {
+        margin: 0;
+        padding: 0;
+        li {
+            a {
+                background-color: #f8f8f8;
+                &:hover {
+                    background-color: $primary;
+                    color: $white;
+                }
+                span {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+.widget__archive,
+.widget__category {
+    margin-bottom: 30px;
+
+    .widget__title {
+        // background-color: $primary;
+        padding: 2rem 1rem;
+        border-bottom: 1px solid #e9ecef;
+        h5 {
+            text-transform: capitalize;
+            font-family: $font-family-heading;
+            margin-bottom: 0;
+            font-size: 18px;
+        }
+        h6 {
+            text-transform: capitalize;
+            font-family: $font-family-heading;
+        }
+    }
+}
+
+//END CATEGORY PROPERTY

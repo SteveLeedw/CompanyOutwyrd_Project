@@ -1,0 +1,286 @@
+/* ==========================================================================
+   Top Bar style
+   ========================================================================== */
+.topbar {
+	background: rgb(10, 4, 148);
+	background: linear-gradient(90deg, rgba(10, 4, 148, 1) 0%, rgba(52, 84, 209, 1) 61%, rgba(0, 159, 255, 1) 100%);
+	padding: 0;
+	min-height: 50px;
+	.topbar-left {
+		@include tablet {
+			text-align: center;
+		}
+		.topbar-text {
+			color: $white;
+			padding: 10px 0;
+			font-size: 13px;
+			font-family: $text-font-paragraph;
+			line-height: 30px;
+			@include mobile {
+				padding: 0;
+				text-align: center;
+			}
+		}
+	}
+	.topbar-right {
+		text-align: right;
+		line-height: 30px;
+		@include tablet {
+			text-align: center;
+			margin: 0;
+		}
+		@include mobile {
+			text-align: center;
+		}
+		.topbar-link {
+			display: inline-table;
+			padding: 10px;
+			padding-left: 0;
+			margin: 0;
+			@include mobile {
+				padding: 0;
+			}
+			li {
+				list-style: none;
+				float: left;
+				color: $white;
+				padding: 0 10px;
+				font-size: 12px;
+				a {
+					color: $white;
+					font-size: 13px;
+					font-family: $text-font-paragraph;
+					&:hover {
+						color: $warning;
+						text-decoration: none;
+					}
+				}
+			}
+		}
+		.topbar-sosmed {
+			display: inline-table;
+			padding: 6px;
+			padding-left: 0;
+			margin: 0;
+			@include tablet {
+				display: none;
+			}
+			li {
+				list-style: none;
+				float: left;
+				font-size: 16px;
+				padding: 0 10px;
+				@include mobile {
+					font-size: 12px;
+				}
+				a {
+					color: $white;
+					font-size: 16px;
+
+					&:hover {
+						color: $warning;
+					}
+				}
+			}
+		}
+	}
+}
+/* ==========================================================================
+   NAVBAR STYLE
+   ========================================================================== */
+.navbar-transparent {
+	box-shadow: 0 2px 3px rgba(100, 100, 100, 0.1);
+	background-color: transparent;
+}
+
+.navbar-soft {
+	box-shadow: none;
+	z-index: 4;
+	@include mobile {
+		padding: 0.5rem 1rem;
+	}
+	.navbar-brand {
+		padding-top: 10px;
+		img {
+			position: relative;
+			object-fit: cover;
+			height: auto;
+			width: 152px;
+		}
+	}
+	.navbar-nav {
+		.nav-item {
+			.nav-link {
+				padding: 2rem 0.5rem;
+				font-weight: 700;
+				text-transform: uppercase;
+				border: 2px solid transparent;
+				font-family: $text-font-paragraph;
+				@include mobile {
+					padding: 1rem 0;
+				}
+				@include tablet {
+					padding: 1rem 0;
+				}
+				&:hover {
+					// color: $primary;
+				}
+			}
+			.dropdown-menu {
+				padding-top: 0;
+				padding-bottom: 0;
+				li {
+					a {
+						font-family: $text-font-paragraph;
+						text-transform: capitalize;
+						font-weight: 500;
+					}
+				}
+				.col-megamenu {
+					padding: 20px 0;
+				}
+			}
+		}
+	}
+}
+
+.navbar-light .navbar-nav .nav-link {
+	color: $black !important;
+}
+// LOGO
+.navbar-transparent {
+	.navbar-brand {
+		img {
+			&:last-child {
+				display: none;
+			}
+		}
+	}
+	.navbar-nav {
+		.nav-item {
+			.nav-link {
+				color: $white;
+			}
+		}
+	}
+}
+
+.fixed-top,
+.navbar-custom {
+	box-shadow: 0 2px 3px rgba(100, 100, 100, 0.1);
+	.navbar-brand {
+		img {
+			display: none;
+			&:last-child {
+				display: block;
+				width: 152px;
+			}
+		}
+	}
+	background-color: $white;
+	animation: smoothScroll 1s forwards;
+	.navbar-nav {
+		.nav-item {
+			.nav-link {
+				color: $black;
+			}
+		}
+	}
+}
+
+.dropdown-toggle[data-toggle="dropdown"]:after {
+	font-family: "FontAwesome";
+	font-weight: 900;
+	content: "\f107";
+	border: 0;
+	vertical-align: baseline;
+}
+
+.navbar {
+	.search {
+		width: 24px;
+		max-width: 100%;
+		a {
+			&:hover {
+				color: $black;
+			}
+		}
+	}
+}
+.top-search {
+	background-color: $white;
+	top: 85px;
+	left: auto;
+	right: 0;
+	height: 100px;
+	position: absolute;
+	padding: 10px 0;
+	width: 100%;
+	z-index: 51;
+	display: none;
+	.input-group {
+		max-width: 100%;
+		margin: 0 auto;
+		width: 100%;
+		display: block;
+		// .form-control {
+		//   height: 46px;
+		// }
+	}
+}
+
+.border-secondary {
+	border-color: $gray-400 !important;
+}
+
+@keyframes smoothScroll {
+	0% {
+		transform: translateY(-40px);
+	}
+	100% {
+		transform: translateY(0px);
+	}
+}
+
+.header__style-one {
+	position: fixed;
+	z-index: 99;
+	width: 100%;
+	@include tablet {
+		position: relative;
+	}
+
+	.navbar-transparent {
+		@include mobile {
+			background-color: $white;
+		}
+		.navbar-brand {
+			img {
+				@include mobile {
+					display: none;
+					&:last-child {
+						display: block;
+					}
+				}
+				@include tablet {
+					display: none;
+					&:last-child {
+						display: block;
+					}
+				}
+			}
+		}
+		.navbar-nav {
+			.nav-item {
+				.nav-link {
+					@include mobile {
+						color: $black;
+					}
+					@include tablet {
+						color: $black;
+					}
+				}
+			}
+		}
+	}
+}

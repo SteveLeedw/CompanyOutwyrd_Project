@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    ${require('./partials/head.html')}
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <!-- <div class="bg-overlay-one"></div> -->
+        <!-- NAVBAR -->
+        ${require('./partials/navbar-v1.html')}
+        <!-- END NAVBAR -->
+        <!-- BREADCRUMB -->
+        <div class="bg-theme-overlay">
+            <section class="section__breadcrumb ">
+                <div class="container">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-md-8 text-center">
+                            <h2 class="text-capitalize text-white ">agency detail</h2>
+                            <ul class="list-inline ">
+                                <li class="list-inline-item">
+                                    <a href="#" class="text-white">
+                                        home
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#" class="text-white">
+                                        agency
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#" class="text-white">
+                                        agency detail
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- END BREADCRUMB -->
+    </header>
+    <div class="clearfix"></div>
+
+    <!-- LISTING LIST -->
+    <section class="profile__agents">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="row no-gutters">
+                        <div class="col-lg-12 cards mt-0">
+                            <div class="row">
+                                ${require('./partials/agency-v1.html')}
+                            </div>
+                        </div>
+                    </div>
+                    <!-- LOCATION -->
+                    <div class="single__detail-features tabs__custom">
+                        <h5 class="text-capitalize detail-heading ">Agency details</h5>
+                        ${require('./partials/single-detail-agency-tabs.html')}
+                    </div>
+                    <!-- END LOCATION -->
+                </div>
+                <div class="col-lg-4">
+                    <div class="sticky-top">
+                        ${require('./partials/form-agency.html')}
+                        <!-- ARCHIVE CATEGORY -->
+                        <aside class=" wrapper__list__category">
+                            ${require('./partials/category-v1.html')}
+                        </aside>
+                        <!-- End ARCHIVE CATEGORY -->
+
+                        ${require('./partials/download-property.html')}
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- END LISTING LIST -->
+
+    <!-- CALL TO ACTION -->
+    ${require('./partials/cta-v1.html')}
+    <!-- END CALL TO ACTION -->
+
+    ${require('./partials/footer-v2.html')}
+
+
+
+
+    <a href="javascript:" id="return-to-top"><i class="fa fa-chevron-up"></i></a>
+
+</body>
+
+</html>

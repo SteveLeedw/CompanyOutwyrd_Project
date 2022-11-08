@@ -1,0 +1,48 @@
+.floorplan {
+    .card {
+        background-color: transparent;
+        .card-header {
+            padding: 0;
+            border-bottom: 0;
+            a {
+                background-color: $primary;
+                font-size: 16px;
+                font-weight: 500;
+                color: $white;
+                display: block;
+                padding: 15px 25px;
+                position: relative;
+                font-family: $font-family-base;
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+            .collapsed {
+                background-color: $white;
+                color: $black;
+            }
+        }
+        .card-body {
+            font-size: 14px;
+        }
+        & + .card {
+            margin-top: 8px;
+        }
+    }
+    [data-toggle="collapse"]:after {
+        float: right;
+        font: normal normal normal 14px/1 FontAwesome;
+        font-size: inherit;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        content: "\f107";
+        transform: rotate(180deg);
+        transition: all linear 0.25s;
+    }
+    [data-toggle="collapse"].collapsed {
+        &:after {
+            transform: rotate(0deg);
+        }
+    }
+}

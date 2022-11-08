@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    ${require('./partials/head.html')}
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        ${require('./partials/navbar-top.html')}
+        <!-- NAVBAR -->
+        ${require('./partials/navbar-v1.html')}
+        <!-- END NAVBAR -->
+    </header>
+    <div class="clearfix"></div>
+    <!-- BREADCRUMB -->
+    <div class="bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section__breadcrumb-v1">
+                        <ol class="breadcrumb mb-0 bg-light">
+                            <li class="breadcrumb-item"><a href="index.html"><i class="fa fa-home"></i> </a></li>
+                            <li class="breadcrumb-item"> <a href="#">Property</a></li>
+                            <li class="breadcrumb-item active"> <span class="text-capitalize"> Luxury family home</span>
+                            </li>
+
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END BREADCRUMB -->
+    <div class="search__area bg__shadow">
+        ${require('./partials/search-style-v2.html')}
+    </div>
+
+    <!-- LISTING LIST -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="tabs__custom-v2 ">
+                                ${require('./partials/filter-vertical-v5.html')}
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END LISTING LIST -->
+
+    <!-- CALL TO ACTION -->
+    ${require('./partials/cta-v1.html')}
+    <!-- END CALL TO ACTION -->
+
+    ${require('./partials/footer-v2.html')}
+
+
+
+
+    <a href="javascript:" id="return-to-top"><i class="fa fa-chevron-up"></i></a>
+
+</body>
+
+</html>

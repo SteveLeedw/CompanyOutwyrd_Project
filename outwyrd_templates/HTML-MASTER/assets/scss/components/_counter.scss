@@ -1,0 +1,30 @@
+// -----------------------------------------------------------------------------
+// Counter
+// -----------------------------------------------------------------------------
+.counter__item {
+    position: relative;
+    &-value {
+        display: block;
+        position: relative;
+        text-align: center;
+        border: double 3px rgba(255, 255, 255, 0.6);
+        border-radius: 2px;
+        padding: 1.5rem;
+        margin-top: 15px;
+        .list-inline {
+            margin: 0;
+            padding: 0;
+            &-item {
+                position: relative;
+                i.fa {
+                    font-size: 40px;
+                    display: block;
+                    text-align: center;
+                }
+                span {
+                    font-size: 40px;
+                }
+            }
+        }
+    }
+}

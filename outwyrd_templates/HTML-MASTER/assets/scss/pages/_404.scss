@@ -1,0 +1,33 @@
+/* ==========================================================================
+   404
+   ========================================================================== */
+.wrap-notfound {
+    .notfound-page {
+        text-align: center;
+
+        h1 {
+            color: white;
+            margin: 0 0 50px 0;
+            font-size: 150px;
+            line-height: 120px;
+            text-shadow: 0 1px 4px #000000;
+            @include mobile {
+                font-size: 100px;
+                line-height: 50px;
+            }
+        }
+        p {
+            color: white;
+            font-weight: 300;
+            letter-spacing: 0;
+            margin: 0 0 35px;
+            line-height: 40px;
+            font-size: 30px;
+            text-shadow: 0 1px 4px #000000;
+            @include mobile {
+                font-size: 20px;
+                line-height: 30px;
+            }
+        }
+    }
+}

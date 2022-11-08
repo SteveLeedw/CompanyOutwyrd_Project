@@ -1,0 +1,228 @@
+// -----------------------------------------------------------------------------
+// CARD IMAGE
+// -----------------------------------------------------------------------------
+
+.card__image {
+    // box-shadow: 0 0 20px 0 rgba(62, 28, 131, 0.1);
+    // -webkit-box-shadow: 0 0 20px 0 rgba(62, 28, 131, 0.1);
+    // -moz-box-shadow: 0 0 20px 0 rgba(62, 28, 131, 0.1);
+    // -webkit-transition: all 0.3s ease;
+    // -moz-transition: all 0.3s ease;
+    // -o-transition: all 0.3s ease;
+    // transition: all 0.3s ease;
+    &:hover {
+        cursor: pointer;
+        -webkit-box-shadow: 0px 0px 30px 0px rgba(19, 19, 28, 0.12);
+        -moz-box-shadow: 0px 0px 30px 0px rgba(19, 19, 28, 0.12);
+        -o-box-shadow: 0px 0px 30px 0px rgba(19, 19, 28, 0.12);
+        box-shadow: 0px 0px 30px 0px rgba(19, 19, 28, 0.12);
+    }
+    .img-space {
+        margin: 10px 10px 0;
+    }
+    &__header {
+        position: relative;
+        overflow: hidden;
+        display: block;
+        &::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 40%;
+            background: linear-gradient(transparent, #1b1b1b);
+            z-index: 1;
+        }
+        .ribbon {
+            box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
+            -webkit-transform: translate3d(0, 0, 1px) rotate(45deg);
+            transform: translate3d(0, 0, 1px) rotate(-45deg);
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            background-color: $primary;
+            color: $white;
+
+            font-size: 14px;
+            line-height: 20px;
+            font-family: $text-font-paragraph;
+            padding: 6px;
+            position: absolute;
+            z-index: 3;
+            left: -30px;
+            top: 15px;
+            width: 120px;
+            text-align: center;
+            margin: auto;
+            height: 30px;
+            bottom: inherit;
+            right: inherit;
+        }
+        .info {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            padding: 2px 5px;
+            background-color: $navy;
+            box-shadow: 1px 2px 1px rgba(94, 93, 99, 0.08), 0 1px 2px rgba(61, 60, 66, 0.12);
+            text-transform: capitalize;
+            letter-spacing: 1px;
+            font-size: 14px;
+            color: $white;
+            font-family: $text-font-paragraph;
+        }
+
+        img.img-transition {
+            height: 250px;
+            max-width: 100%;
+            width: 100%;
+            object-fit: cover;
+            -webkit-transition: all 400ms linear 0s;
+            -o-transition: all 400ms linear 0s;
+            transition: all 400ms linear 0s;
+        }
+        &:hover img.img-transition {
+            -webkit-transform: scale(1.05);
+            -ms-transform: scale(1.05);
+            transform: scale(1.05);
+        }
+        &:hover::before {
+            opacity: 1;
+        }
+    }
+
+    &__body {
+        padding: 1.5rem 1rem;
+        position: relative;
+        @include tablet {
+            padding: 1rem 1rem;
+        }
+
+        span {
+            font-family: $text-font-paragraph;
+            font-size: 14px;
+        }
+        h6 {
+            font-family: $font-family-heading;
+            a {
+                color: $navy;
+                text-transform: capitalize;
+                font-family: $font-family-heading;
+                &:hover {
+                    // color: $primary;
+                    text-decoration: none;
+                }
+            }
+            @include tablet {
+                font-size: 16px;
+            }
+        }
+
+        .list-inline {
+            line-height: 24px;
+            margin-bottom: 0;
+            &-item {
+                span {
+                    text-align: center;
+                    font-family: $text-font-paragraph;
+                    text-transform: capitalize;
+                    font-weight: 500;
+                    font-size: 14px;
+                    color: $gray-700;
+                    i.fa {
+                        color: $gray-700;
+                    }
+                }
+            }
+        }
+        .card__content {
+            width: 100%;
+            color: $white;
+            -webkit-transition: all 0.4s;
+            transition: all 0.4s;
+            margin: 0;
+            list-style: none;
+            font-size: 14px;
+            font-weight: 600;
+            @include mobile {
+            }
+            @include tablet {
+                display: none;
+            }
+        }
+    }
+    &__footer-first {
+        align-items: center;
+        &::before {
+            border: 1px solid gray;
+        }
+    }
+    &__footer {
+        height: 100%;
+        border-left: 1px solid $gray-200;
+        padding: 1.5rem 1rem;
+
+        margin-bottom: auto;
+        margin-top: auto;
+        align-items: center;
+        text-align: center;
+        @include mobile {
+            display: flex;
+            padding: 0.5rem 1rem;
+            border-left: none;
+            border-top: 1px solid $gray-200;
+            text-align: left;
+        }
+
+        figure {
+            position: relative;
+            display: flex;
+            width: 50px;
+            height: 50px;
+            margin: 0 auto;
+            @include mobile {
+                margin: 0 10px 0 0;
+            }
+            img {
+                max-width: 100%;
+                height: auto;
+                border: 1px solid $gray-200;
+                padding: 3px;
+                vertical-align: middle;
+            }
+        }
+        .name {
+            padding-top: 20px;
+            @include mobile {
+                padding-top: 0px;
+            }
+        }
+        .price {
+            padding-top: 20px;
+            @include mobile {
+                padding-top: 5px;
+            }
+        }
+        .list-inline {
+            &-item {
+                a {
+                    text-transform: capitalize;
+                    font-family: $text-font-paragraph;
+                    color: $navy;
+
+                    &:hover {
+                        text-decoration: none;
+                    }
+                }
+
+                span,
+                small {
+                    font-family: $text-font-paragraph;
+                    font-size: 11px;
+                    text-transform: capitalize;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}

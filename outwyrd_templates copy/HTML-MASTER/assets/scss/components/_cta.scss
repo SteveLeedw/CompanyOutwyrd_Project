@@ -1,0 +1,39 @@
+.cta,
+.cta-v1 {
+    display: block;
+    h2 {
+        font-size: 27px;
+        margin-bottom: 10px;
+        font-family: $text-heading;
+        @include mobile {
+            font-size: 24px;
+            line-height: 1.5;
+        }
+    }
+    p {
+        font-size: 16px;
+        margin-bottom: 30px;
+        line-height: 24px;
+        @include tablet {
+            margin-bottom: 15px;
+        }
+    }
+}
+
+.cta-v1 {
+    background: linear-gradient(90deg, #443088 0%, #3454d1 61%, #009fff 100%);
+    p {
+        margin-bottom: 0;
+        @include mobile {
+            margin-bottom: 15px;
+        }
+        @include tablet {
+            margin-bottom: 15px;
+        }
+    }
+    .container {
+        @include tablet {
+            text-align: center;
+        }
+    }
+}

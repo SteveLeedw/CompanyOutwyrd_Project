@@ -1,0 +1,30 @@
+.box__overlay {
+    background-image: url("../../images/bg7.jpg");
+    width: 100%;
+    background-attachment: fixed !important;
+    background-position: center center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    .row {
+        margin: 0;
+    }
+    &-right {
+        padding: 40px 30px 10px;
+        background-color: $primary;
+        position: relative;
+        z-index: 2;
+        margin: 0;
+        opacity: 0.8;
+        width: 50%;
+        @include mobile {
+            width: 100%;
+        }
+
+        h5 {
+            font-family: $text-heading;
+        }
+    }
+}

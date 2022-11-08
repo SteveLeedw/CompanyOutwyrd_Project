@@ -1,0 +1,43 @@
+// -----------------------------------------------------------------------------
+// DOWNLOAD
+// -----------------------------------------------------------------------------
+.download {
+    margin-bottom: 30px;
+    h5 {
+        font-family: $font-family-heading;
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    &__item {
+        background-color: transparent;
+        position: relative;
+        border: 1px solid #e9ecef;
+        transition: 0.5s;
+        padding: 15px 20px;
+        margin: -1px 0 0;
+        a {
+            font-weight: 500;
+            display: block;
+            color: $navy;
+            font-size: 14px;
+            text-decoration: none;
+            text-transform: capitalize;
+            font-family: $font-family-base;
+        }
+        i {
+            color: $navy;
+            transition: 0.5s;
+            padding-right: 20px;
+        }
+        &:hover {
+            color: $white;
+            border-color: $primary;
+            background-color: $primary;
+        }
+    }
+}
+
+.download .download__item:hover a,
+.download .download__item:hover i {
+    color: $white;
+}

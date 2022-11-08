@@ -1,0 +1,1 @@
+import "jquery-nice-select/js/jquery.nice-select";

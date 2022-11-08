@@ -1,0 +1,24 @@
+listing agent name
+phone number
+client name
+client phone number
+address street
+address apt suite unit
+address city
+address state
+address zip code
+
+age,floor plan, bedrooms? additional facitilties(bathroom ect)
+parking
+proximity to main roads
+property tax?
+
+pictures?
+
+sale type: sale, auction, rent/lease,
+
+important for search
+
+
+
+meta data: when was the listing listed? time and date, user account # for listing

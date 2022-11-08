@@ -1,0 +1,69 @@
+/*===================================================================================*/
+/*	GENERAL
+/*===================================================================================*/
+.bg-overlay {
+    background-color: rgba(27, 33, 39, 0.5);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+}
+
+.bg__overlay-black {
+    position: relative;
+    z-index: 1;
+    &::before {
+        background: rgba(0, 16, 34, 0.5);
+        content: "";
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: 0;
+    }
+}
+
+.full-height {
+    height: 100vh;
+}
+
+.h600 {
+    height: 400px;
+    width: 100%;
+}
+
+section {
+    padding: 80px 0;
+    position: relative;
+    @media screen and (min-width: 320px) and (max-width: 575px) {
+        padding: 40px 0;
+    }
+}
+
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+.pb-30 {
+    padding-bottom: 30px;
+}
+
+.pb-40 {
+    padding-bottom: 40px;
+}
+
+.bg__card-shadow {
+    -ms-box-shadow: -1px 4px 10px rgba(0, 0, 0, 0.06);
+    -o-box-shadow: -1px 4px 10px rgba(0, 0, 0, 0.06);
+    box-shadow: -1px 4px 10px rgba(0, 0, 0, 0.06);
+}
+
+.sticky-top {
+    top: 85px !important;
+}
+
+.sticky-top {
+    z-index: 3 !important;
+}

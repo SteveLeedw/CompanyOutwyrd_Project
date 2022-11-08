@@ -1,0 +1,106 @@
+.home__video {
+    padding: 150px 0;
+    @include mobile {
+        padding: 80px 0;
+    }
+    &-area {
+        .play-video-1 {
+            left: 50%;
+            top: 50%;
+            position: absolute !important;
+            @include mobile {
+                left: 40%;
+                top: 35%;
+            }
+        }
+        .play-video,
+        .play-video-1 {
+            height: 65px;
+            width: 65px;
+            text-align: center;
+            line-height: 65px;
+            background-color: $primary;
+            z-index: 1;
+            font-size: 20px;
+            display: inline-block;
+            position: relative;
+            -webkit-transform-origin: center;
+            transform-origin: center center;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+            border-radius: 50%;
+            -webkit-box-shadow: 0 5px 10px 0 rgba(255, 255, 255, 0.1);
+            -moz-box-shadow: 0 5px 10px 0 rgba(255, 255, 255, 0.1);
+            -ms-box-shadow: 0 5px 10px 0 rgba(255, 255, 255, 0.1);
+            -o-box-shadow: 0 5px 10px 0 rgba(255, 255, 255, 0.1);
+            box-shadow: 0 5px 10px 0 rgba(255, 255, 255, 0.1);
+            &::before,
+            &::after {
+                content: "";
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                height: 65px;
+                width: 65px;
+                -webkit-transform: translateX(-50%) translateY(-50%);
+                transform: translateX(-50%) translateY(-50%);
+                -webkit-transform-origin: center;
+                transform-origin: center center;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                -ms-border-radius: 50%;
+                -o-border-radius: 50%;
+                border-radius: 50%;
+                -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.3);
+                -moz-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.3);
+                -ms-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.3);
+                -o-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.3);
+                box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.3);
+                -webkit-animation: ripple 3s infinite;
+                -moz-animation: ripple 3s infinite;
+                -ms-animation: ripple 3s infinite;
+                -o-animation: ripple 3s infinite;
+                animation: ripple 3s infinite;
+            }
+            &::before {
+                animation-delay: 0.9s;
+                content: "";
+            }
+            &::after {
+                animation-delay: 0.6s;
+                content: "";
+            }
+        }
+        h2 {
+            font-size: 32px;
+            text-transform: capitalize;
+            padding-top: 50px;
+            font-family: $font-family-heading;
+            margin-bottom: 0;
+            @include mobile {
+                font-size: 24px;
+                padding-top: 30px;
+            }
+        }
+    }
+}
+
+@-webkit-keyframes ripple {
+    70% {
+        box-shadow: 0 0 0 70px rgba(255, 255, 255, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+    }
+}
+
+@keyframes ripple {
+    70% {
+        box-shadow: 0 0 0 70px rgba(255, 255, 255, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+    }
+}

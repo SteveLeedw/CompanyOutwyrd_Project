@@ -1,0 +1,78 @@
+// -----------------------------------------------------------------------------
+// PROFILE AUTHOR
+// -----------------------------------------------------------------------------
+.wrap__profile {
+    border: 1px solid #ddd;
+    padding: 20px;
+    position: relative;
+    display: flex;
+    margin-bottom: 30px;
+
+    &-author {
+        display: flex;
+        @include mobile {
+            display: block;
+            text-align: center;
+        }
+        figure {
+            width: 140px;
+            height: auto;
+            display: block;
+            margin-right: 10px;
+            @include mobile {
+                max-width: 100%;
+                width: 100%;
+                text-align: center;
+            }
+            img {
+                padding: 4px;
+                border-radius: 50%;
+                border: 1px solid #eee;
+                max-width: 100%;
+                height: auto;
+                object-fit: cover;
+                position: relative;
+                // border: 1px solid gray;
+            }
+        }
+        &-detail {
+            // border: 1px solid gray;
+            float: left;
+            @include tablet {
+                margin-left: 10px;
+            }
+            &-name {
+                // border: 1px solid gray;
+                text-transform: uppercase;
+                color: $gray-600;
+                letter-spacing: 1px;
+                font-family: $font-family-base;
+                font-size: 12px;
+                font-weight: 700;
+                margin-bottom: 8px;
+            }
+            h5 {
+                text-transform: capitalize;
+                font-family: $font-family-heading;
+                @include mobile {
+                    font-size: 18px;
+                }
+            }
+            p {
+            }
+            .list-inline {
+                margin: 0;
+                .list-inline-item {
+                    // border: 1px solid gray;
+                    .btn-social.telegram {
+                        background: #179cde;
+                        &:hover {
+                            background: transparent;
+                            color: #179cde;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
