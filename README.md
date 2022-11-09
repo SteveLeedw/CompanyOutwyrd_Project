@@ -1,4 +1,4 @@
-# OutwyrdCompany_Project
+# CompanyOutwyrd_Project
 
 
 If you run this project, you use MAMP (https://www.mamp.info/en/windows/)
